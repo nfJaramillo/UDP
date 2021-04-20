@@ -61,7 +61,7 @@ def recibir (num):
     s.sendto(str.encode("nom Recibido"), direccionServidor)
 
     # Crea un archivo para guardar la descarga
-    filename = "ArchivosRecibido    s/Cliente"+str(num)+"-Prueba-"+str(cantClientes)+"."+nombreArchivo[-3:]
+    filename = "ArchivosRecibidos/Cliente"+str(num)+"-Prueba-"+str(cantClientes)+"."+nombreArchivo[-3:]
     file = open(filename, 'wb')
 
     # Escribe el nombre y tamano esperado del archivo
